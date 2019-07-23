@@ -1,0 +1,277 @@
+/* BASE */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #474751;
+}
+
+h2 {
+    margin: 0 0 30px 0;
+}
+
+section {
+    padding: 30px 0;
+    line-height: 1.5;
+}
+
+.section__text {
+    font-weight: 300;
+}
+
+.container {
+    width: 1440px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.section__title {
+    font-size: 30px;
+    border-bottom: 1px solid #a4937f;
+    color: #474751;
+    text-transform: capitalize;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+
+/* HEADER */
+
+header {
+    height: 80px;
+    background-color: #efe0c3;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+    width: 1440px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+header nav .lang-switch a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #5a4937;
+}
+
+header nav li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+header nav ul a {
+    color: #5a4937;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 300;
+    transition: all .2s ease-in-out;
+}
+
+header nav ul a:hover {
+    font-weight: 400;
+}
+
+
+/* HERO */
+
+.hero__container {
+    display: flex;
+    padding-top: 115px;
+}
+
+.hero__left-col {
+    width: 40%;
+}
+
+.hero__right-col {
+    width: 59%;
+}
+
+.hero__title {
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #474751;
+}
+
+.hero__description {
+    font-size: 20px;
+    color: #474751;
+    font-weight: 300;
+}
+
+
+/* SHOWROOM */
+
+.showroom {
+    background-color: #f4f5f7;
+}
+
+.showroom__col {
+    display: flex;
+    justify-content: center;
+}
+
+.showroom__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.showroom__col .showroom__item:last-child {
+    margin-right: 0;
+}
+
+
+/* SERVICES */
+
+.services h2 {
+    margin: 0;
+}
+
+.services-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 130px;
+}
+
+.services .section__col-left {
+    width: 40%;
+}
+
+.services .section__col-right {
+    width: 50%;
+}
+
+
+/* NEWS */
+
+.news {
+    background-color: #f4f5f7;
+    color: #5a4937;
+}
+
+.news .section__text--bold {
+    font-weight: 500;
+}
+
+.news .section__text {
+    font-weight: 300;
+}
+
+
+/* UBER */
+
+.uber-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.uber .section__col-left {
+    width: 45%;
+}
+
+.uber .section__col-right {
+    width: 53%;
+}
+
+.uber .section__col-right img {
+    max-width: 100%;
+}
+
+
+/* IMPRESSUM */
+
+.impressum {
+    background-color: #f4f5f7;
+}
+
+.impressum td:first-child {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.impressum td span {
+    display: inline-block;
+    padding: 10px;
+}
+
+
+/* CONTACT */
+
+.footer {
+    background-color: #474751;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer h2 {
+    color: #fff;
+}
+
+.footer h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.footer h3.name {
+    font-size: 27px;
+}
+
+.footer h3:first-child {
+    font-size: 30px;
+}
+
+.footer p {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.footer h3,
+.footer h4,
+.footer p {
+    text-align: center;
+}
+
+.footer__contact-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__contact-row li {
+    list-style: none;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+}
+
+.footer nav .lang-switch a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #5a4937;
+}
+
+.footer nav li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.footer nav ul a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 300;
+    transition: all .4s ease-in-out;
+}
