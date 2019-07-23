@@ -163,6 +163,14 @@ header nav ul a:hover {
 }
 
 
+/* EVENTS */
+
+.events-row img {
+    width: 25%;
+    margin-left: -4px;
+}
+
+
 /* UBER */
 
 .uber-row {
