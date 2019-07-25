@@ -108,6 +108,8 @@ header nav ul a:hover {
 
 .showroom {
     background-color: #f4f5f7;
+    position: relative;
+    z-index: 1;
 }
 
 .showroom__col {
@@ -118,10 +120,98 @@ header nav ul a:hover {
 .showroom__item {
     margin-right: 30px;
     margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.showroom__item:hover .showroom__item-link-more {
+    opacity: 1;
+    right: 0px;
 }
 
 .showroom__col .showroom__item:last-child {
     margin-right: 0;
+}
+
+.showroom__item-link-more {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 300;
+    background-color: #a4937f;
+    padding: 15px;
+    color: #fff;
+    margin: 0;
+    text-align: right;
+    position: absolute;
+    top: 4px;
+    right: -20px;
+    opacity: 0;
+    transition: all .3s linear;
+}
+
+
+/* SHOWROOM MODAL ---- */
+
+.showroom__item-details-modal {
+    width: 880px;
+    height: 495px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* display: flex; */
+    display: none;
+    z-index: 100;
+}
+
+.showroom__item-details {
+    text-align: center;
+    flex: auto;
+    position: relative;
+}
+
+.showroom__item-details h4 {
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.showroom__item-details p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.showroom__img-container img {
+    max-width: 100%;
+    width: 500px;
+}
+
+.showroom__item-cta {
+    background-color: #a4937f;
+    display: inline-block;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 80px;
+    cursor: pointer;
+    transition: background-color .3s ease-in;
+}
+
+.showroom__item-cta:hover {
+    background-color: #938372;
+}
+
+.showroom__item-details-close-btn {
+    color: #5a4937;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
 }
 
 
