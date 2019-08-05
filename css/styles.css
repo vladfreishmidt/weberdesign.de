@@ -19,7 +19,7 @@ section {
 }
 
 .container {
-    width: 1440px;
+    width: 1200px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -39,6 +39,8 @@ section {
 header {
     height: 80px;
     background-color: #efe0c3;
+    position: fixed;
+    width: 100%;
 }
 
 header nav {
@@ -47,7 +49,7 @@ header nav {
     align-items: center;
     padding: 0 10px;
     height: 100%;
-    width: 1440px;
+    /* width: 1440px; */
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -71,24 +73,32 @@ header nav ul a {
     transition: all .2s ease-in-out;
 }
 
-header nav ul a:hover {
+header nav ul a:hover,
+.active-page {
     font-weight: 400;
 }
+
+
 
 
 /* HERO */
 
 .hero__container {
     display: flex;
+    justify-content: space-between;
     padding-top: 115px;
 }
 
 .hero__left-col {
-    width: 40%;
+    flex: 0 0 40%;
 }
 
 .hero__right-col {
-    width: 59%;
+    flex: auto;
+}
+
+.hero__right-col img {
+    max-width: 100%;
 }
 
 .hero__title {
@@ -107,6 +117,7 @@ header nav ul a:hover {
 /* SHOWROOM */
 
 .showroom {
+    position: relative;
     background-color: #f4f5f7;
     position: relative;
     z-index: 1;
@@ -120,21 +131,21 @@ header nav ul a:hover {
 .showroom__item {
     margin-right: 30px;
     margin-bottom: 30px;
-    position: relative;
     overflow: hidden;
     cursor: pointer;
 }
 
-.showroom__item:hover .showroom__item-link-more {
-    opacity: 1;
-    right: 0px;
+.item-preview-container {
+    position: relative;
 }
+
 
 .showroom__col .showroom__item:last-child {
     margin-right: 0;
 }
 
 .showroom__item-link-more {
+    position: absolute;
     font-size: 18px;
     text-transform: capitalize;
     font-weight: 300;
@@ -143,34 +154,43 @@ header nav ul a:hover {
     color: #fff;
     margin: 0;
     text-align: right;
-    position: absolute;
-    top: 4px;
+    bottom: 50%;
+    transform: translateY(50%);
     right: -20px;
     opacity: 0;
     transition: all .3s linear;
 }
 
+.showroom__item:hover .showroom__item-link-more {
+    opacity: 1;
+    right: 1px;
+}
+
 
 /* SHOWROOM MODAL ---- */
+.showroom__item-details-modal-container {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    left: 50%;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease-in-out; 
+}
 
 .showroom__item-details-modal {
     width: 880px;
     height: 495px;
     background: #fff;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin-top: auto;
-    margin-bottom: auto;
-    /* display: flex; */
-    display: none;
+    display: flex;
     z-index: 100;
 }
 
 .showroom__item-details {
     text-align: center;
     flex: auto;
-    position: relative;
+    /* position: relative; */
 }
 
 .showroom__item-details h4 {
@@ -191,6 +211,7 @@ header nav ul a:hover {
 
 .showroom__item-cta {
     background-color: #a4937f;
+    text-decoration: none;
     display: inline-block;
     color: #fff;
     padding: 15px 25px;
@@ -212,6 +233,20 @@ header nav ul a:hover {
     right: 0;
     padding: 10px;
     cursor: pointer;
+}
+
+/* SHOWROOM styles for JS  */
+.item-selected {
+    visibility: visible;
+    opacity: 1;
+    top: 50%;
+    z-index: 99;
+}
+
+.item-hidden {
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
 }
 
 
@@ -373,3 +408,4 @@ header nav ul a:hover {
     font-weight: 300;
     transition: all .4s ease-in-out;
 }
+
