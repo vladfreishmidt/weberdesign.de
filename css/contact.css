@@ -75,4 +75,6 @@ box-shadow: 10px 10px 37px -23px rgba(0,0,0,0.75);
     margin: 0 auto 30px auto !important;
     border-radius: 3px; 
     border: 1px solid rgb(177, 177, 177);
+    font-weight: 300;
+    font-size: 18px;
 }
