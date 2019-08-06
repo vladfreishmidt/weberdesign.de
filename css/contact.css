@@ -1,6 +1,15 @@
+#contact header {
+    position: static;
+}
+
 #contact .contact-section {
    padding: 0;
    margin-bottom: 50px;
+}
+
+#contact .contact-section .top-row {
+    padding: 50px 0;
+    text-align: center;
 }
 
 .contact__container {
